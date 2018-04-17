@@ -32,8 +32,8 @@ vmname="muki"
 ## Run the command "vboxmanage list ostypes |more" to find your Guest OS.
 ## Use the "ID:" as your ostype. Remember that everything is case-sensitive in linux.
  
-ostype="Ubuntu"
-isofile="/home/bogdanyilaura/Asztal/Telepítők"
+ostype="Ubuntu_64"
+isofile="/home/bogdanyilaura/Asztal/Telepítők/"
  
  
 ## Memory and video memory in MB
@@ -72,7 +72,7 @@ audio="none"
 ###                                                                 ###
 #######################################################################
  
-hddfile=/data/virtual_machines/vbox/vbox_guests/${vmname}/${vmname}.vdi
+hddfile=/home/bogdanyilaura/VirtualBoxMVs/${vmname}/${vmname}.vdi
 clear
  
 # Create the VM
