@@ -80,7 +80,7 @@ vboxmanage createvm --name $vmname --ostype $ostype --register
  
 # Set memory, vram, audio and vdre port range
 vboxmanage modifyvm $vmname --memory $memory --vram $vram --acpi on --ioapic on --cpus 1 --cpuexecutioncap 75 --rtcuseutc on --cpuhotplug on --pae on --hwvirtex on
-vboxmanage modifyvm $vmname --nic1 bridged --bridgeadapter1 eth0 --cableconnected1 on
+vboxmanage modifyvm $vmname --nic1 bridged --bridgeadapter1 enp2s0 --cableconnected1 on
 vboxmanage modifyvm $vmname --audio $audio
 vboxmanage modifyvm $vmname --vrde on --vrdeport $vrdeport --vrdeauthtype null
  
